@@ -1,0 +1,15 @@
+1.A:文档目录树管理功能
+    - 增加文档树model，create_all更新表结构，插入表记录
+    - 文档书增、删、改、查接口实现
+    - 文档管理界面前端实现
+        - 添加header导航菜单
+        - 添加AdminEbookDoc.vue页面
+    - U:电子书管理界面，增加【文档管理】入口
+        - 路径跳转，传递ebook_id参数
+        - props=true的情况下，参数params生效，
+        - params 中包含路径未定义的参数名称，传递params为空，方案：改为使用state,   history.state.params接收
+    - 文档列表，返回电子书名称，修改了to_dict()方法，返回关联对象
+        嵌套字典访问dict[key1][key2]
+2.U:表单增加校验
+    - 提交按钮放在表单外面，通过表单响应式对象formRef.value.validate().then().catch(),校验表单规则
+3.A:文档内容编辑功能

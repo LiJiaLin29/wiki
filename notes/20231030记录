@@ -1,0 +1,12 @@
+1. A: 创建vue项目，npm create vue@latest,开启router可选功能
+    - 修改项目启动ip,端口->vite.config.js配置文件
+    - 删除自带的vue组件
+2. 使用ant-design-vue UI组件库
+    - 安装ant-design-vue组件: npm i --save ant-design-vue@4.x
+    - main.js文件，注册ant组件、引入样式
+3. 编写web页面
+    - 首页布局设计与开发
+    - 编写首页路由
+    - 显示路由页面<RouterView>
+    - 提取通用组件 TheHead/ TheFooter
+    - TheHeader.vue将菜单分类写死的数据，改为动态加载数据

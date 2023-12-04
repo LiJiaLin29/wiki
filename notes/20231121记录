@@ -1,0 +1,14 @@
+1.vue文件引入外部js文件，无法使用@别名
+    - vite.config.js resolve.alias
+    - js文件，导出对象
+        export const tools = {} 才能import XX from ''
+    - vue <script setup>引入，直接可以在模板中使用函数
+2.U:增加表单验证规则
+    - form 增加rule属性
+    - script脚本定义rules响应式数据和validate函数，并导出
+    - js强转number类型, Number('str')
+    - 编辑表单，id输入框禁用
+    - 树形菜单,树形表格数据改由前端处理，编写数组转树形数据工具类
+    - 树形菜单,点击一个节点，所有节点同时展开，table增加row-key属性
+3.U:分类表单，父分类显示为下拉选项
+    - 编辑分类表单，修改的一级分类，选择的父分类禁用掉本身disabled

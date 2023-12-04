@@ -1,0 +1,13 @@
+1. A: web服务配置文件,自定义端口
+2. A: 服务器使用公网ip启动
+3. U: 调整路由文件夹,接口项目路径：/api/v1/[module]
+4. A: fastapi返回json响应数据方式，通过JSONResponse对象
+5. U:uvicorn 项目热部署reload=True， app需要改为:文件名+app
+6. 开发功能：电子书列表查询接口
+    - 配置文件，增加数据库连接信息
+    - sqlachemy,数据库连接、连接池数，实例化,得到数据库会话
+    - 定义数据库model,完成表的设计与创建
+    - 查询业务功能实现
+    - 接口逻辑实现，返回电子书列表数据
+conda:wiki
+    conda activate wiki 激活环境

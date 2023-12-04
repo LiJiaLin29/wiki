@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": { "@/*": ["src/*"] },
+      "allowSyntheticDefaultImports": true,
+      "allowJs": true
+    },
+    "include": [
+      "src/**/*.js",  // 导入js
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "src/**/*.vue",
+      "tests/**/*.ts",
+      "tests/**/*.tsx",
+      "public/config.js"  // 导入js
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+}

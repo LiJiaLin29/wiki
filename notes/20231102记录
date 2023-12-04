@@ -1,0 +1,26 @@
+1. 电子书管理功能开发
+2. 当前选中菜单，vuex刷新页面后，数据就初始化了，持久化存储
+    - selectedkeys要设置成$route.path地址
+    - a-menu-item 的key设置成要去的地址
+3. A:电子书管理页面开发
+    - header管理菜单名称修改
+    - 菜单路由跳转
+    - 电子书列表分页查询接口
+        - 添加Page对象,校验分页是否有效
+        - U:api 接收参数类型，pydantic校验请求格式,一直报错？？
+            每个参数都需要定义参数单独接收
+            pydantic,修改为继承方式，分页独立成page类
+        - U: ebookservice 修改查询逻辑，使用中间表达式-》再.all()返回结果
+        - U: response返回记录总数给前端
+            封装pageResp,包含原来的列表、总条数
+    - vue组件分页
+        - 发送请求，添加分页参数
+        - 返回结果修改，获取总记录数、电子书列表
+        - A: 表格分页组件， pagination自定义分页器信息，指定分页数据
+        - A: setup函数，返回分页对象
+        - A: 实现点击页码查询回调函数
+        - tips: 
+            'ssss'.includes() 字符串包含某个字符
+            axios.get(url, {params:params})发送请求，params传参数字典即可
+            三目运算符：res = a<b?1:2
+            setup函数中无法使用this, 获取当前组件方法：getCurrentInstance()

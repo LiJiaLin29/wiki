@@ -1,0 +1,17 @@
+1. U:fastapi参数校验异常,原来需要单独catch,
+    - 方案：axios前端统一处理
+    - 使用Modal组件展示http错误提示（ant design  message组件）
+    - 使用Modal组件展示错误码提示（ant design  message组件）
+2. A: 增加电子书名称查询功能
+    - 前端：增加名称筛选框 input-search组件
+    - 前端：查询，实现请求逻辑 @search
+    - 搜索结果为空是，页码判断出错，提示无效，修改：
+3. U: 电子书查询，大小写不敏感
+    - ilike
+    - func
+        from sqlalchemy import func
+        models.User.query.filter(func.lower(User.username) == func.lower("GaNyE")).first()
+4. U: 电子书编辑，回显信息重构，新开发接口
+    - 增加：根据id查询电子书接口
+    - 前端：点击编辑，查询指定id电子书信息。
+    - 视频采用的方法是：复制record记录对象，不会影响列表中的数据。

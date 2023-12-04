@@ -1,0 +1,63 @@
+# 忽略编辑器配置目录 
+# / 开头只忽略同级的内容，而不忽略下级目录中的内容
+.vscode
+.idea/*
+.project
+.pydevproject
+
+# 编译文件 #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+
+# 临时文件 #
+###################
+*.swp
+*.swo
+*~
+*__pycache__
+
+# 程序包 #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# 日志、数据库文件 #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+*.lock
+
+# images
+*.png
+*.tiff
+*.jpg
+*.gif
+
+# 依赖包
+venv/*
+# node_modules/*
+
+# config
+nosetests.xml
+pytests.xml

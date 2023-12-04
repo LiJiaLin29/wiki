@@ -1,0 +1,10 @@
+1. 接口，修改查询电子书列表service为动态查询
+2. 添加全局变量single文件，使用provide、inject方式使用全局变量
+3. 多环境配置
+    - 添加dev prod配置文件,访问变量：import.meta.env.VITE_API_URL
+    - 修改vite编译文件
+    - 修改vite配置文件，加载env:使用vite的loadEnv()函数,使用环境变量
+    - 修改axios baseUrl,向服务端发送请求就不需要加服务器地址了
+4. 配置axios拦截器，打印前端请求和响应日志
+5. TODO:后台接口，拦截器，校验登录校验接口，携带token，
+    - api 接口，添加参数token: str = Depends(oauth2_scheme)

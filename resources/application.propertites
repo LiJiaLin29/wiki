@@ -1,0 +1,10 @@
+//服务器信息
+server.port=8500
+// 数据库信息
+database.host=127.0.0.1:5432
+database.name=wiki
+database.user=ljl
+database.password=123456
+database.poolSize=5
+database.timeout=3000
+database.driver=postgresql
